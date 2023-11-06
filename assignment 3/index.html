@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <title>Canberra Ghost</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" defer></script>
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nosifer&family=Sorts+Mill+Goudy&display=swap" rel="stylesheet">
+</head>
+<body class="background">
+
+    <video playsinline autoplay muted loop poster="" class="video">
+        <source src="assets/video/candle.webm" type="video/webm">
+        <source src="assets/video/candle.mp4" type="video/mp4">
+    </video>
+    <audio unmuted autoplay preload loop="" src="assets/sound/ghostbackgroundmusic.mp3" type="audio/mpeg" class="audio"></audio>
+
+    
+    <main>
+
+        <!-- <div class="outerbox">
+            <p>testing</p>
+        </div> -->
+        <div>
+            <h1>Canberra's Roaming Ghosts</h1>
+        </div>
+        
+       <div class="cta" id="idcta">
+        <div id="ctaexitimg"><img id="ctaexitprompt" src = "https://i.postimg.cc/Gph268zB/arrowwhite.png"></div>
+        <h2>Who is Tym?</h2>
+        <p class="small">Tim the Yowie Man is a mystery investigator and cryptonaturalist (the study of strange and hidden phenomena) and is an authority on paranormal and unusual phenomena in Australia. The canberra ghost stories on this web page were primarily sourced from his top 7 most haunted Canberra places.</p>
+        <p class="small">Tim has an extraordinary enthusiasm for all things spooky and has dedicated the past fifteen years to travelling the length and breadth of Australia in search of haunted and unexplained happenings.</p>
+        <p class="small">More about Tim can be found <a href="https://www.yowieman.com.au/">here.</a></p>
+       </div>
+
+        <div id="ghost1"><img src = "https://i.postimg.cc/pXxNcDGZ/filmcatch.png" height = 110px></div>
+        <div id="ghost2"><img src = "https://i.postimg.cc/m2SvvtKG/pilotcap.png" height = 110px></div>
+        <div id="ghost3"><img src = "https://i.postimg.cc/LXf7NXjw/necklaceghost.png" height = 110px></div>
+        <div id="ghost4"><img src = "https://i.postimg.cc/9fDsw-10W/rose.png" height = 110px></div>
+        <div id="ghost5"><img src = "https://i.postimg.cc/BnYdvRqY/heart.png" height = 110px></div>
+        <div id="ghost6"><img src = "https://i.postimg.cc/6QFgrR4C/hotcrossbuns.png" height = 110px></div>
+        <div id="ghost7"><img src = "https://i.postimg.cc/3r25ZLBN/corn.png" height = 110px></div>
+    
+        <div class="popup" id="myPopup">
+            <div class="exitimg"><img id="exitprompt" src = "https://i.postimg.cc/gJs8hxsm/whiteexitimg.png"></div>
+            <h2>National Film and Sound Archive</h2>
+            <p>Sitting on the western edge of the city centre, the National Film and Sound Archive (NFSA) has a generally universally agreed reputation for being Canberra’s most haunted building, earning top spot for picks.</p>
+            <p>It used to be the Institute of Anatomy and has only been the NFSA since the early 1980s. For about 50 years prior to that, it was home to the Institute of Anatomy where there were animal and human remains, body parts dissected and studied and put on display in that same building.</p>
+            <p>It was open to the public so people would flock there to gawk and look at body parts in jars or mummified humans… So many strange things happen there though nothing nasty happens – most people experience things moving without anyone near it, or poltergeist activity, trolleys being moved around, glasses of water thrown by unknown forces, films coming out of antigravity film canisters, touches to the shoulder…</p>
+            <!-- carousel -->
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
+                    <div class="numbertext">1 / 3</div>
+                    <img src="https://canberradaily.com.au/wp-content/uploads/2022/05/November-2020_National-Film-and-Sound-Archives-NFSA-2434-lr.jpg" height="175px">
+                    </div>
+                
+                    <div class="mySlides fade">
+                    <div class="numbertext">2 / 3</div>
+                    <img src="https://www.canberratimes.com.au/images/transform/v1/crop/frm/silverstone-ct-migration/cb0bc1f1-cd7a-4587-985f-7d0f76446f6a/r0_0_1024_576_w1200_h678_fmax.jpg" height="175px">
+                    </div>
+                
+                    <div class="mySlides fade">
+                    <div class="numbertext">3 / 3</div>
+                    <img src="https://live-production.wcms.abc-cdn.net.au/07fa66cdfc37f7f1745b06c9a580f5b1?impolicy=wcms_crop_resize&cropH=1120&cropW=1988&xPos=0&yPos=377&width=862&height=485" height="175px">
+                    </div>
+            
+                    <!-- next and previous buttons -->
+                    <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+                </div>
+                <br>
+                
+                <!-- the dots removed feature
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div> -->
+        </div>
+
+            <div class="popup2" id="myPopup2">
+                <div class="exitimg"><img id="exitprompt2" src = "https://i.postimg.cc/gJs8hxsm/whiteexitimg.png"></div>
+                <h2>The Air Disaster Memorial</h2>
+                <p>Out near the airport, between Queanbeyan and the airport, is the haunted location of the Air Disaster Memorial. On the 13th of August 1940, a plane crashed in Canberra and 10 people lost their lives.</p>
+                <p>Since then, it’s earned a reputation of being a really freaky place. For the last 20 years, it’s been closed off to the public. You can walk to it, but you can’t drive to it. Prior to this, when you used to get your licence, you were dared to go out there and see if you could hack it.</p>
+                <p>Batteries would go dead, people would see the outlines of people on fire, car lights would flicker off and on… Whether the reports are genuine or there was so much build up or expectation that people go out to that site and already have heightened awareness, who knows? But it’s definitely got a reputation of being one of the most haunted spots in Canberra.</p>
+
+                    <div class="slideshow-container">
+                        <div class="mySlides2 fade">
+                        <div class="numbertext">1 / 3</div>
+                        <img src="https://canberradaily.com.au/wp-content/uploads/2022/05/air-disaster-memorial-national-library-of-australia.jpg" height="175px">
+                        </div>
+                    
+                        <div class="mySlides2 fade">
+                        <div class="numbertext">2 / 3</div>
+                        <img src="https://www.tracesofwar.com/upload/6378160630022233.JPG" height="175px">
+                        </div>
+                    
+                        <div class="mySlides2 fade">
+                        <div class="numbertext">3 / 3</div>
+                        <img src="https://live-production.wcms.abc-cdn.net.au/b14b13f688dd52806a4c45276c579c5d?impolicy=wcms_crop_resize&cropH=324&cropW=576&xPos=0&yPos=75&width=862&height=485" height="175px">
+                        </div>
+
+                        <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+                    </div>
+                    <br>
+            </div>
+
+                <div class="popup3" id="myPopup3">
+                    <div class="exitimg"><img id="exitprompt3" src = "https://i.postimg.cc/gJs8hxsm/whiteexitimg.png"></div>
+                    <h2>Blundells Cottage</h2>
+                    <p>Blundells Cottage is a little, old, stone building on edge of Lake Burley Griffin. The old farmhouse dates back to well before lake was even built, instead when it was a little river. The story goes that a poor teenage girl named Florrie Blundell died in 1892 from an accident in the house.</p>
+                    <p>It’s thought that she was ironing, and accidently lit the house and herself on fire. She did manage to survive the house fire but died of injuries from burns. A psychic medium said they believe she had died with her favourite necklace around her neck, but no one knows for sure. People claim she manifests herself in the form of a burning smell, even when there’s no fire anywhere near the area.</p>
+                    <p>A lot of people who want to experience things come to Blundells Cottage with a necklace on, in case it increases their chances. People have seen Florrie in the garden dancing around, too. She died quite young, about 16 years old, and it’s thought that since she had her life cut short, she just wants to play with people. She loves when people come to visit her and talk about her and her family.</p>
+    
+                        <div class="slideshow-container">
+                            <div class="mySlides3 fade">
+                            <div class="numbertext">1 / 3</div>
+                            <img src="https://canberradaily.com.au/wp-content/uploads/2022/05/Blundells-Cottage_Kerrie-Brewer-4608-lr.jpg" height="175px">
+                            </div>
+                        
+                            <div class="mySlides3 fade">
+                            <div class="numbertext">2 / 3</div>
+                            <img src="https://visitcanberra.com.au/Atdw/Products/Attractions/blundells-cottage/79919/image-thumb__79919__Landscape/5c36769a2ea7da0f60a26a4b~-~media--fb5aa0ff--query@2x.webp" height="175px">
+                            </div>
+                        
+                            <div class="mySlides3 fade">
+                            <div class="numbertext">3 / 3</div>
+                            <img src="https://citynews.com.au/wp-content/uploads/2020/03/Blundells-Cottage-e1583203563250.png" height="175px">
+                            </div>
+                            
+                            <a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
+                            <a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
+                        </div>
+                        <br>
+                </div>
+
+                    <div class="popup4" id="myPopup4">
+                        <div class="exitimg"><img id="exitprompt4" src = "https://i.postimg.cc/gJs8hxsm/whiteexitimg.png"></div>
+                        <h2>Duntroon House</h2>
+                        <p>Duntroon House sits at the centre of the Royal Military College and is Canberra’s oldest European house dating back to the 1830s. Most people have seen there what is believed to be the ghost of Sophie Susana Campbell, who died there in 1885.</p>
+                        <p>There’s speculation as to whether she jumped or was pushed from the top floor of the building, which was her bedroom. Furniture is often moved around her room when the doors are locked, and sheets are moved when no one has slept there. It’s a place where, when officers have to stay there, they always draw straws as to who gets Sophie’s room.</p>
+                        <p>Oh, and people have reported seeing a ghost who spurs in the rose garden underneath the window. Recently, Angela Binos of Isabella Plains snapped a photo of what appears to be a shadowy figure near a tree in the gardens of Duntroon House. This is either a trick of light or evidence of the ghost in the gardens of Duntroon House.</p>
+        
+                            <div class="slideshow-container">
+                                <div class="mySlides4 fade">
+                                <div class="numbertext">1 / 4</div>
+                                <img src="https://canberradaily.com.au/wp-content/uploads/2022/05/duntroon-house-royal-military-college.jpg" height="175px">
+                                </div>
+                            
+                                <div class="mySlides4 fade">
+                                <div class="numbertext">2 / 4</div>
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/c/c2/Duntroon_1870.png" height="175px">
+                                </div>
+                            
+                                <div class="mySlides4 fade">
+                                <div class="numbertext">3 / 4</div>
+                                <img src="https://www.canberratimes.com.au/images/transform/v1/crop/frm/silverstone-ct-migration/0f61d42e-2708-47cc-b94f-de3b3ce1e5b7/r0_0_787_524_w1200_h678_fmax.jpg" height="175px">
+                                </div>
+
+                                <div class="mySlides4 fade">
+                                <div class="numbertext">3 / 4</div>
+                                <img src="https://i.postimg.cc/26ZTtVM4/shadowfigureinthegardensofduntroon.png" height="175px">
+                                </div>
+                                
+                                <a class="prev" onclick="plusSlides(-1, 3)">&#10094;</a>
+                                <a class="next" onclick="plusSlides(1, 3)">&#10095;</a>
+                            </div>
+                            <br>
+                    </div>
+
+                        <div class="popup5" id="myPopup5">
+                            <div class="exitimg"><img id="exitprompt5" src = "https://i.postimg.cc/gJs8hxsm/whiteexitimg.png"></div>
+                            <h2>Kurrajong Hotel</h2>
+                            <p>Kurrajong Hotel is one of Canberra’s earliest hotels, and the ghost of a former prime minister is rumoured to haunt it.</p>
+                            <p>Ben Chifley died on the 13th of June 1951 from a heart attack, and he liked to stay at the hotel instead of the Lodge. One night, he suffered a fatal heart attack, but no one is sure if he died in the room, or on the way to hospital, or just as he arrived at the hotel. But the few people who have stayed in his room over the years, even people not aware of his story, claim to have experienced a ghost.</p>
+                            <p>People have also said when they’ve been on the grassy area underneath his room and have looked up to the window, they’ve noticed a grey suited man pointing to the direction of Parliament… and people believe it’s Ben.</p>
+            
+                                <div class="slideshow-container">
+                                    <div class="mySlides5 fade">
+                                    <div class="numbertext">1 / 3</div>
+                                    <img src="https://canberradaily.com.au/wp-content/uploads/2022/05/Hotel-Kurrajong-1926.2.jpg" height="175px">
+                                    </div>
+                                
+                                    <div class="mySlides5 fade">
+                                    <div class="numbertext">2 / 3</div>
+                                    <img src="https://live-production.wcms.abc-cdn.net.au/8008dfef3450e4420cf7199e4dc4b1fe?impolicy=wcms_crop_resize&cropH=715&cropW=1269&xPos=0&yPos=175&width=862&height=485" height="175px">
+                                    </div>
+                                
+                                    <div class="mySlides5 fade">
+                                    <div class="numbertext">3 / 3</div>
+                                    <img src="https://live-production.wcms.abc-cdn.net.au/990d21de60c91e7ff09f74ad7fb4a31a?impolicy=wcms_crop_resize&cropH=794&cropW=1193&xPos=0&yPos=0&width=862&height=575" height="175px">
+                                    </div>
+                                    
+                                    <a class="prev" onclick="plusSlides(-1, 4)">&#10094;</a>
+                                    <a class="next" onclick="plusSlides(1, 4)">&#10095;</a>
+                                </div>
+                                <br>
+                        </div>
+
+                            <div class="popup6" id="myPopup6">
+                                <div class="exitimg"><img id="exitprompt6" src = "https://i.postimg.cc/gJs8hxsm/whiteexitimg.png"></div>
+                                <h2>National Museum of Australia</h2>
+                                <p>Many people who have been in Canberra for a while would know that the National Museum of Australia used to be the Canberra Hospital… and weird things happen there.</p>
+                                <p>There are numerous stories there of a ghostly matron that seemed to be attached to the old hospital. This ghost has been seen in white, wandering around the lake foreshore</p>
+                                <p>In the current museum, people report information boards spinning in the night, , and hot cross buns can be smelt – it’s well known that the hospital kitchen used to make them.</p>
+                                <p>There's an old woman that appears in a bathtub but there's no bath tub in that room … she's been seen a number of times. There's another one... a young boy who seems to be dressed in 1940s-like clothes. Who would've thought the new and popular National Museum would be full of spooky activities?</p>
+                
+                                    <div class="slideshow-container">
+                                        <div class="mySlides6 fade">
+                                        <div class="numbertext">1 / 4</div>
+                                        <img src="https://redballoon.com.au/dw/image/v2/BCRD_PRD/on/demandware.static/-/Sites-rb-au-catalog/default/images/products/NMA001-M/sgalutwu4lnkqjeivwol.jpg?sw=784&sh=431&q=70" height="175px">
+                                        </div>
+                                    
+                                        <div class="mySlides6 fade">
+                                        <div class="numbertext">2 / 4</div>
+                                        <img src="https://live-production.wcms.abc-cdn.net.au/a7a9613722ef1419752de41b6323daf1?impolicy=wcms_crop_resize&cropH=514&cropW=770&xPos=15&yPos=0&width=862&height=575" height="175px">
+                                        </div>
+                                    
+                                        <div class="mySlides6 fade">
+                                        <div class="numbertext">3 / 4</div>
+                                        <img src="https://www.canberratimes.com.au/images/transform/v1/crop/frm/silverstone-ct-migration/b540f543-5e72-490d-bf94-0d1329c522cc/r0_0_992_651_w1200_h678_fmax.jpg" height="175px">
+                                        </div>
+
+                                        <div class="mySlides6 fade">
+                                        <div class="numbertext">4 / 4</div>
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/f/f3/Nursing_staff_and_ward_block%2C_Canberra_Hospital%2C_1924.jpg" height="175px">
+                                        </div>
+                                        
+                                        <a class="prev" onclick="plusSlides(-1, 5)">&#10094;</a>
+                                        <a class="next" onclick="plusSlides(1, 5)">&#10095;</a>
+                                    </div>
+                                    <br>
+                            </div>
+
+                                <div class="popup7" id="myPopup7">
+                                    <div class="exitimg"><img id="exitprompt7" src = "https://i.postimg.cc/gJs8hxsm/whiteexitimg.png"></div>
+                                    <h2>Lanyon Homestead</h2>
+                                    <p>Lanyon Homestead was built in Tuggeranong in the early 1800s and was a pastoral property for convicts. There was a large number of people who drowned in the river along there, and there were work and farming accidents over the years, but one of the ghosts people see is a man in a kitchen.</p>
+                                    <p>The old kitchen is one of the oldest buildings on the site, built around 1840, and people claim to see the ghost of a stockman or a farmer standing at the fireplace in the kitchen warming his hands. It’s thought that workers would come to the kitchen from working out on the farm to warm up before lunch, but who knows.</p>
+                    
+                                        <div class="slideshow-container">
+                                            <div class="mySlides7 fade">
+                                            <div class="numbertext">1 / 4</div>
+                                            <img src="https://www.nationaltrust.org.au/wp-content/uploads/2015/09/Lanyon_Homestead.jpg" height="200px">
+                                            </div>
+                                        
+                                            <div class="mySlides7 fade">
+                                            <div class="numbertext">2 / 4</div>
+                                            <img src="https://highcountryonline.com.au/wp-content/uploads/2018/09/HCO.-Lanyon.5.jpg" height="200px">
+                                            </div>
+                                        
+                                            <div class="mySlides7 fade">
+                                            <div class="numbertext">3 / 4</div>
+                                            <img src="https://www.canberratimes.com.au/images/transform/v1/crop/frm/Z4Q6sUEHdcmw72MBPYgZkU/d9e92253-2a7c-4aee-831b-85c76b295c54.jpg/r0_0_1772_1268_w1200_h678_fmax.jpg" height="200px">
+                                            </div>
+
+                                            <div class="mySlides7 fade">
+                                            <div class="numbertext">4 / 4</div>
+                                            <img src=" https://highcountryonline.com.au/wp-content/uploads/2018/09/HCO.-Lanyon.12.jpg" height="200px">
+                                            </div>
+                                            
+                                            <a class="prev" onclick="plusSlides(-1, 6)">&#10094;</a>
+                                            <a class="next" onclick="plusSlides(1, 6)">&#10095;</a>
+                                        </div>
+                                        <br>
+                                </div>
+
+                                
+    
+    </main>
+    <!-- <footer>
+    </footer> -->
+
+</body>
+</html>

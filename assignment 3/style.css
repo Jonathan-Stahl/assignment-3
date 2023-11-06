@@ -1,0 +1,360 @@
+body{
+    overflow-x: hidden;
+}
+
+p {
+    text-align: left;
+}
+
+p.small {
+    font-size: 13px;
+}
+
+h1 {
+    color: rgb(255, 0, 0);
+    opacity: 10%;
+    font-family: 'Nosifer', sans-serif;
+    font-size: 67.5px;
+    position: relative;
+    z-index: 50;
+    margin-top: -15px;
+    cursor: default;
+}
+
+h2{
+    text-align: left;
+}
+
+.background {
+    background-color: #1B1212;
+    color: #FAF9F6;
+    margin: 0;
+    text-align: center;
+    font-family: 'Sorts Mill Goudy', serif;
+}
+
+video {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+/* all audio css */
+    /* audio {
+        position: relative;
+        display: block;
+        opacity: 80%;
+        z-index:800;
+        overflow-x: hidden;
+    }
+
+    .cta2 {
+        z-index: 800;
+        display: block;
+        position: absolute;
+        width: 400px;
+        height: 75px;
+        background-color: #001C1D;
+        border: 2px solid #00FDFF;
+        border-radius: 15px;
+        opacity: 75%;
+        bottom: 400px;
+        right: -360px;
+        overflow-x: hidden;
+        transition-duration: 0.5s;
+        padding: 8px;
+        padding-right: 40px;
+
+    }
+
+    .cta2:hover {
+        right: -50px;
+        transition-duration: 0.5s;
+    }
+
+    .cta2exitimg {
+        position: relative;
+    }
+
+        #cta2exitprompt {
+            rotate: -90deg;
+            position: absolute;
+            right: 470px;
+            top: 130px;
+            height: 20px;
+            width: 20px;
+            text-align: right;
+            transition: transform 0.8s ease;
+        }
+
+        #cta2exitprompt:hover {
+            cursor: pointer;
+            transform: rotate(180deg);
+        }
+ */
+
+/* Flips the image influenced by js */
+.flipped {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+/* cta on the right side of the screen */
+.cta {
+    z-index: 800;
+    display: block;
+    position: absolute;
+    width: 500px;
+    height: 300px;
+    background-color: #001C1D;
+    border: 2px solid #00FDFF;
+    border-radius: 15px;
+    opacity: 75%;
+    bottom: 20px;
+    right: -470px;
+    overflow-x: hidden;
+    transition-duration: 0.5s;
+    padding: 10px;
+    padding-left: 40px;
+    /* bottom: 0; */
+}
+
+.cta:hover {
+    right: 0px;
+    transition-duration: 0.5s;
+}
+
+/* cross sign */
+.ctaexitimg {
+    position: relative;
+}
+
+/* cross sign for each div */
+    #ctaexitprompt {
+        rotate: -90deg;
+        position: absolute;
+        right: 470px;
+        top: 130px;
+        height: 20px;
+        width: 20px;
+        text-align: right;
+        transition: transform 0.8s ease;
+    }
+
+
+/* each exit prompts hover */
+    #ctaexitprompt:hover {
+        cursor: pointer;
+        transform: rotate(180deg);
+    }
+
+/* Different popup classes for each ghost */
+    .popup, .popup2, .popup3, .popup4, .popup5, .popup6, .popup7 {
+        z-index: 900;
+        display: none;
+        width: 60%;
+        margin-top: -60px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-top: 5px;
+        padding-bottom: 10px;
+        box-shadow: 0 0px 50px #009798 ;
+        text-align: center;
+        position: relative;
+        opacity: 75%;
+        background-color: #001C1D ;
+        border: 10px ridge #00FDFF ;
+    }
+        /* setting the colours for each popup during the testing phases
+        .popup {
+            background-color: #001C1D ;
+            border: 10px groove #00FDFF ;
+        }
+
+        .popup2 {
+            background-color: green;
+            border: 5px solid blue;
+        }
+
+        .popup3 {
+            background-color: aqua;
+            border: 5px solid blue;
+        }
+
+        .popup4 {
+            background-color: pink;
+            border: 5px solid blue;
+        }
+
+        .popup5 {
+            background-color: purple;
+            border: 5px solid blue;
+        }
+
+        .popup6 {
+            background-color: skyblue;
+            border: 5px solid blue;
+        }
+
+        .popup7 {
+            background-color: yellow;
+            border: 5px solid blue;
+        } */
+
+/* each ghosts attributes */
+    #ghost1, #ghost2, #ghost3, #ghost4, #ghost5, #ghost6, #ghost7 {
+        position: absolute;
+        width: 6%;
+        top: 50%;
+        left: 47%;
+        z-index: 200;
+        opacity: 55%;
+    }
+
+/* each ghosts hover */
+    #ghost1, #ghost2, #ghost3, #ghost4, #ghost5, #ghost6, #ghost7:hover {
+        cursor: pointer;
+    }
+
+/* cross sign */
+.exitimg {
+    position: relative;
+}
+
+/* cross sign for each div */
+    #exitprompt, #exitprompt2, #exitprompt3, #exitprompt4, #exitprompt5, #exitprompt6, #exitprompt7 {
+        position: absolute;
+        right: 0;
+        top: 20px;
+        height: 20px;
+        width: 20px;
+        text-align: right;
+        transition: transform 0.8s ease;
+    }
+
+
+/* each exit prompts hover */
+    #exitprompt:hover, #exitprompt2:hover, #exitprompt3:hover, #exitprompt4:hover, #exitprompt5:hover, #exitprompt6:hover, #exitprompt7:hover {
+        cursor: pointer;
+        transform: rotate(180deg);
+    }
+
+
+/* outside click box which unfortunately didn't work, not sure why
+      .outerbox {
+        background-color: pink;
+        color: pink;
+        padding: 0;
+        z-index: 50;
+        position: absolute;
+        margin-bottom: 0;
+        margin-top: -20px;
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+        display: none;
+        
+
+        opacity: 10%;
+      }
+
+      .outerbox:hover{
+        cursor:default;
+      } */
+
+/* carousel */
+
+    * {box-sizing:border-box}
+
+/* Slideshow container */
+    .slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    }
+
+    /* Hide the images by default */
+    .mySlides, .mySlides2, .mySlides3, .mySlides4, .mySlides5, .mySlides6, .mySlides7 {
+    display: none;
+    }
+
+    /* Next & previous buttons */
+    .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 90%;
+    width: auto;
+    margin-top: -22px;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    border-radius: 5px;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+    right: 160px;
+    }
+
+    .prev {
+    left: 160px;
+    }
+
+    /* white background on hover */
+    .prev:hover, .next:hover {
+    background-color: rgb(162, 253, 255);
+    opacity: 60%;
+    color: black
+    }
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 95%;
+    width: 100%;
+    }
+
+    /* The dots/bullets/indicators removed feature
+    .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: rgb(162, 253, 255);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    opacity: 30%;
+    } */
+
+    /* .active, .dot:hover {
+    background-color: rgb(162, 253, 255);
+    opacity: 90%;
+    } */
+
+    /* Fading animation */
+    .fade {
+    animation-name: fade;
+    animation-duration: 1s;
+    }
+
+    @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+    }
